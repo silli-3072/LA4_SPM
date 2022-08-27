@@ -13,6 +13,7 @@
 		82408DA928BA3C0300A40774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82408DA728BA3C0300A40774 /* Main.storyboard */; };
 		82408DAB28BA3C0400A40774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82408DAA28BA3C0400A40774 /* Assets.xcassets */; };
 		82408DAE28BA3C0400A40774 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82408DAC28BA3C0400A40774 /* LaunchScreen.storyboard */; };
+		82408DB728BA3C2800A40774 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 82408DB628BA3C2800A40774 /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82408DB728BA3C2800A40774 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SPM;
+			packageProductDependencies = (
+				82408DB628BA3C2800A40774 /* PKHUD */,
+			);
 			productName = SPM;
 			productReference = 82408D9E28BA3C0300A40774 /* SPM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 82408D9528BA3C0300A40774;
+			packageReferences = (
+				82408DB528BA3C2700A40774 /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = 82408D9F28BA3C0300A40774 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82408DB528BA3C2700A40774 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82408DB628BA3C2800A40774 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82408DB528BA3C2700A40774 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82408D9628BA3C0300A40774 /* Project object */;
 }
